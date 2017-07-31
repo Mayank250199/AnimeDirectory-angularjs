@@ -1,0 +1,27 @@
+<div class="content">
+
+  <center>
+
+  </center> <button ng-click="order= 'name'">Order by name</button>
+   <button ng-click="order= 'color'">Order by color</button>
+   <button ng-click="order= 'rank'">Order by rank</button> </center>
+<br />
+  &nbsp; <input type="text" ng-model="search" placeholder="Search any Anime Character" />
+   <ul id="anime-list">
+     <li ng-repeat="name in names | orderBy: order | filter: search"  ng-show="name.available">
+     <img ng-src="{{name.thumb}}" style="margin:-12px 10px 0 0; float left; width:50px;" />
+      <h3> {{name.name}} -  #{{name.rank}}</h3>
+      <div class="remove" ng-click="removeAnime(name)">x</div>
+      <span class="belt" style="background:{{name.color}}">{{name.color}} color</span>
+     </li>
+   </ul>
+   <h1> Add anime</h1>
+   <form ng-submit="addanime()">
+     <input type="text" placeholder="Name" ng-model="newanime.name"/>
+     <input type="text" placeholder="Rank" ng-model="newanime.rank"/>
+     <input type="text" placeholder="Color" ng-model="newanime.color"/>
+     <input  type="submit" value="Add new anime"  />
+    </form>
+    <a href="" ng-click="removeAll()">Remove All Anime</a>
+
+</div>

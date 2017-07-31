@@ -1,0 +1,19 @@
+[{
+	"name": "Naruto ",
+	"rank": "3",
+	"color": "Red",
+	"available": true,
+	"thumb": "content/img/naruto.jpg"
+}, {
+	"name": "Death Note",
+	"rank": "1",
+	"color": "Brown",
+	"available": true,
+	"thumb": "content/img/deathnote.jpg"
+}, {
+	"name": "Code Geass",
+	"rank": "2",
+	"color": "Blue",
+	"available": true,
+	"thumb": "content/img/codegeass.jpg"
+}]
